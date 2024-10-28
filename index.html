@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOLESTYLE</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="Styles/popup.css" />
+    <script src="Scripts/popup.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <h1 class="logo">SOLESTYLE</h1>
+        <nav class="navbar">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="auth-buttons">
+          <button id="loginBtn">Login</button>
+          <button id="signupBtn">Sign-Up</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Login Popup Form -->
+    <div id="loginPopup" class="popup-form">
+      <div class="form-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+          <label for="loginEmail">Email</label>
+          <input type="email" id="loginEmail" required />
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" required />
+          <button type="submit">Submit</button>
+          <button
+            type="button"
+            class="close-btn"
+            onclick="closePopup('loginPopup')"
+          >
+            Cancel
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Sign-Up Popup Form -->
+    <div id="signupPopup" class="popup-form">
+      <div class="form-container">
+        <h2>Sign-Up</h2>
+        <form id="signupForm">
+          <label for="signupEmail">Email</label>
+          <input type="email" id="signupEmail" required />
+          <label for="signupPassword">Password</label>
+          <input type="password" id="signupPassword" required />
+          <button type="submit">Submit</button>
+          <button
+            type="button"
+            class="close-btn"
+            onclick="closePopup('signupPopup')"
+          >
+            Cancel
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <h2>Find Your Perfect Pair</h2>
+        <p>Stylish and comfortable shoes for every occasion.</p>
+        <a href="#shop" class="btn">Shop Now</a>
+      </div>
+    </section>
+
+    <section id="shop" class="products">
+      <div class="product-container">
+        <h2 style="color: white">Our Collection</h2>
+        <div class="product-grid">
+          <a
+            id="shoe1"
+            class="product-card"
+            href=" https://www.nike.com/w/running-shoes-37v7jzy7ok"
+          >
+            <h3>Running Shoes</h3>
+          </a>
+          <a
+            id="shoe2"
+            class="product-card"
+            href=" https://www.myntra.com/canvas-shoes"
+          >
+            <h3>Canvas Shoes</h3>
+          </a>
+          <a
+            id="shoe3"
+            class="product-card"
+            href=" https://www.vonwellx.com/sri-lanka/men-formal-footwear.html"
+          >
+            <h3>Formal Shoes</h3>
+          </a>
+          <a
+            id="shoe4"
+            class="product-card"
+            href=" https://www.campusshoes.com/collections/men-casual-shoes?srsltid=AfmBOop3WL5nSkKcXfMKWDwkIy1VchGWnnmt_V5-SPSXDjFeBNYbhscj"
+          >
+            <h3>Casual Sneakers</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="about-container">
+        <h2>About Us</h2>
+        <p>
+          At SOLESTYLE, we believe in providing quality footwear that combines
+          style and comfort. Our collection is curated to meet the needs of
+          every shoe lover, from casual sneakers to formal dress shoes.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="contact-container">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2024 SOLESTYLE. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

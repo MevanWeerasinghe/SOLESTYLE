@@ -1,0 +1,246 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.937);
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #f45217;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.logo {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 24px;
+  font-weight: 800;
+  color: black;
+}
+header nav ul li {
+  display: inline;
+  margin-left: 20px;
+  font-weight: 600;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.522), rgba(0, 0, 0, 0.44)),
+    url("Public/background.jpg") no-repeat center center/cover;
+  height: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.hero .btn {
+  background-color: #f45217;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.hero .btn:hover {
+  background-color: #ff1500;
+}
+
+/* Products Section */
+
+.products {
+  padding: 50px 0;
+  background: linear-gradient(rgba(72, 92, 90, 0.4), rgba(0, 0, 0, 0.6));
+}
+
+.product-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+.products h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  color: white;
+  font-size: 26px;
+  text-decoration: none;
+  font-size: x-large;
+  border: 2px solid #f45217;
+  border-radius: 10px;
+  width: 30%;
+  height: 200px;
+  padding: 20px;
+  box-shadow: 10px 10px 10px rgba(107, 56, 56, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-card:hover {
+  transform: scale(1.1);
+  transition: all 0.4s;
+}
+
+#shoe1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.351), rgba(0, 0, 0, 0.5)),
+    url("Public/running_shoes.png") no-repeat center center/cover;
+}
+
+#shoe2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.351), rgba(0, 0, 0, 0.5)),
+    url("Public/canvas_shoes.png") no-repeat center center/cover;
+}
+
+#shoe3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.351), rgba(0, 0, 0, 0.5)),
+    url("Public/formal_shoes.png") no-repeat center center/cover;
+}
+
+#shoe4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.351), rgba(0, 0, 0, 0.5)),
+    url("Public/casual_sneakers.png") no-repeat center center/cover;
+}
+
+/* About Section */
+.about {
+  padding: 170px 0;
+  background-color: transparent;
+  color: white;
+  margin: 55px 0;
+}
+
+.about h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.about p {
+  text-align: center;
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Contact Section */
+.contact {
+  width: 100%;
+  padding: 50px 0;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container {
+  width: 60%;
+  color: white;
+  padding: 10px 0;
+  border: 1px solid #f45217;
+  max-width: 600px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px rgba(107, 56, 56, 0.5);
+  margin: 40px 0;
+}
+
+.contact h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+  font-size: 32px;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact input,
+.contact textarea {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact textarea {
+  height: 150px;
+}
+
+.contact .btn {
+  display: block;
+  width: 94%;
+  background-color: #ff4500;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact .btn:hover {
+  background-color: #ff0f02;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
